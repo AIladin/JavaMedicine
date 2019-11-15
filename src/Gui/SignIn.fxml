@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.SignInController">
+   <children>
+      <Label layoutX="153.0" layoutY="14.0" text="Sign In">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginField" layoutX="21.0" layoutY="85.0" />
+      <Label layoutX="21.0" layoutY="68.0" text="Login" />
+      <Label layoutX="21.0" layoutY="119.0" text="Password" />
+      <PasswordField fx:id="passwordField" layoutX="21.0" layoutY="136.0" />
+      <Label layoutX="21.0" layoutY="161.0" text="Repeat password" />
+      <PasswordField fx:id="repeatPasswordField" layoutX="21.0" layoutY="178.0" />
+      <Button fx:id="acceptButton" layoutX="20.0" layoutY="219.0" mnemonicParsing="false" onAction="#acceptEvent" prefHeight="25.0" prefWidth="59.0" text="Accept" />
+      <Button fx:id="backButton" layoutX="111.0" layoutY="219.0" mnemonicParsing="false" onAction="#backEvent" prefHeight="25.0" prefWidth="59.0" text="Back" />
+      <Label fx:id="msgUsedLogin" layoutX="60.0" layoutY="68.0" text="Login already used." textFill="#e41212" visible="false" />
+      <CheckBox fx:id="doctorCheckButton" layoutX="183.0" layoutY="117.0" mnemonicParsing="false" onAction="#doctorEvent" prefHeight="17.0" prefWidth="59.0" text="Doctor" />
+      <TextArea fx:id="specField" editable="false" layoutX="183.0" layoutY="160.0" prefHeight="85.0" prefWidth="149.0" />
+      <Label layoutX="183.0" layoutY="138.0" text="Doctor specification" />
+      <TextField fx:id="nameField" layoutX="183.0" layoutY="85.0" />
+      <Label layoutX="183.0" layoutY="68.0" text="Name" />
+      <Label fx:id="msgAccountCreated" layoutX="51.0" layoutY="249.0" text="Account created." textFill="#0a8306" visible="false" />
+      <Label fx:id="msgPassNotMatch" layoutX="29.0" layoutY="203.0" text="Passwords do not match!" textFill="RED" visible="false" />
+      <Label fx:id="msgNotFilled" layoutX="222.0" layoutY="68.0" text="not filled!" textFill="#e80e0e" visible="false" />
+      <Label fx:id="msgSpecEmpty" layoutX="296.0" layoutY="138.0" text="empty!" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
